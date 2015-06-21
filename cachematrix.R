@@ -1,7 +1,13 @@
-## Put comments here that give an overall description of what your
-## functions do
+##Caching inverse of matrices help speed up future calculations 
+##that might use the same inverse because 
+##calculating the inverse is a computationally expensive task.
 
-## Write a short comment describing this function
+
+##The following function :
+##sets the matrix value
+##gets the matrix value
+##sets the inverse of matrix
+##gets the inverse of the matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
   inv = NULL
@@ -17,7 +23,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Checks if inverse has already been calculated.
+##If not, calculate inverse.
 
 cacheSolve <- function(x, ...) {
         inv = x$getinv()
